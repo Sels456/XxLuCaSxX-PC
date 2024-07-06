@@ -401,7 +401,7 @@ local function checkPos(x, y)
 end
 
 consoleModule = modules.game_console
-BM = macro(1, 'Bug Map', function() 
+Bm = macro(1, 'Bug Map', function() 
  if modules.corelib.g_keyboard.isKeyPressed('w') and not consoleModule:isChatEnabled() then
   checkPos(0, -5)
  elseif modules.corelib.g_keyboard.isKeyPressed('e') and not consoleModule:isChatEnabled() then
