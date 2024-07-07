@@ -218,9 +218,9 @@ mysticMacro = function()
     end
 end
 
-fm = macro(100, ".::Final Mystic 85%::.", mysticMacro);
+mk = macro(100, ".::Final Mystic 85%::.", mysticMacro);
 
-test1 = addIcon("2", {item =13504, text = "Kai", hotkey = ""}, fm)
+test1 = addIcon("2", {item =13504, text = "Kai", hotkey = ""}, mk)
 test1:breakAnchors()
 test1:move(160, 60)
 
