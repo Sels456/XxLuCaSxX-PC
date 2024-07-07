@@ -218,7 +218,11 @@ mysticMacro = function()
     end
 end
 
-macro(100, ".::Final Mystic 85%::.", mysticMacro);
+test1 = addIcon("2", {item =13504, text = "Kai", hotkey = ""}, Fm)
+test1:breakAnchors()
+test1:move(160, 60)
+
+Fm = macro(100, ".::Final Mystic 85%::.", mysticMacro);
 
 local spellKai = 'mystic kai';
 local spellDefense = 'mystic defense';
