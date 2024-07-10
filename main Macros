@@ -95,6 +95,15 @@ say('magnus destruction')
 end
 end)
 
+local combo
+macro(100, "Magnus", function()
+if g_game.isAttacking() then
+say('')
+say('terra destruction')
+say('terra attack')
+end
+end)
+
 -- Crea una etiqueta de UI con el texto 
 local name = UI.Label("-- [[PvP]] --")
 
