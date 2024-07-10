@@ -96,7 +96,7 @@ end
 end)
 
 local combo
-macro(100, "Magnus", function()
+macro(100, "Avatar", function()
 if g_game.isAttacking() then
 say('')
 say('terra destruction')
