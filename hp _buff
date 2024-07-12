@@ -74,6 +74,12 @@ macro(500, "Avatar regen", function()
   end
 end)
 
+macro(500, "Pitou regen", function()
+  if hppercent() <= 85 then
+   say('pitou Regeneration')
+  end
+end)
+
 -- Establece la pestaña por defecto en "spells"
 setDefaultTab("HP")
 
@@ -178,4 +184,8 @@ end)
 
 macro(8000, "Avatar", function()
   say('terra power up')
+end)
+
+macro(8000, "Pitou", function()
+  say('pitou power up')
 end)
