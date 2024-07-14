@@ -185,17 +185,13 @@ macro(1000, "Auto Bless", function()
     end
 end)
 
-local itemId = 13052
-ib = macro(1000, "Item Bless", function()
-    if bless <= 0 then
-        local item = findItem(itemId)
-        if item then
-        useWith(item, player)
-        end
-    end
+ib = macro(1000, 'Use blessing', function()
+  if not getFinger() then
+   usewith(13052, player)
+   end
 end)
 
-test1 = addIcon("11", {item =13052, text = "Combo", hotkey = ""}, ib)
+test1 = addIcon("11", {item =13052, text = "Bless", hotkey = ""}, ib)
 test1:breakAnchors()
 test1:move(110, 220)
 
