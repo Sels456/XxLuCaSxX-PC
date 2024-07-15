@@ -65,7 +65,7 @@ addTextEdit("Combo5Text", storage.Combo5Text or "", function(widget, text) stora
 end)
 test1 = addIcon("2", {item =13351, text = "Combo", hotkey = ""}, cpvp)
 test1:breakAnchors()
-test1:move(60, 60)
+test1:move(210, 110)
 
 local combo
 macro(600, "Hibrido", function()
@@ -150,7 +150,7 @@ end
 end) 
 test1 = addIcon("3", {item =111, text = "Enemy", hotkey = "F11"}, roto)
 test1:breakAnchors()
-test1:move(110, 60)
+test1:move(210, 160)
 
 
 Panels.AttackLeaderTarget(batTab)  UI.Separator()
@@ -236,7 +236,7 @@ end)
 
 test1 = addIcon("2", {item =13504, text = "Kai", hotkey = ""}, mk)
 test1:breakAnchors()
-test1:move(160, 60)
+test1:move(210, 210)
 
 local defenseHp = 45 --- below this % hp will cast mystic defense (
 local kaiHp = 60 --- above this % hp will cast mystic kai (
@@ -323,9 +323,6 @@ end
 end
 end)
 
-test1 = addIcon("2", {item =13481, text = "Ig Pet", hotkey = ""}, pet)
-test1:breakAnchors()
-test1:move(110, 180)
 -- Crea una etiqueta de UI con el texto 
 local name = UI.Label("-- [[NECESARIOS]] --")
 
@@ -424,7 +421,7 @@ end)
 
 test1 = addIcon("6", {item =769, text = "Bug Map", hotkey = ""}, Bm)
 test1:breakAnchors()
-test1:move(60, 120)
+test1:move(210, 260)
 
 
 ds = macro(100, "Hold Target", nil, function()
@@ -442,9 +439,9 @@ if (oldTarget:getPosition().z == posz()) then
     end
   end
 end)
-test1 = addIcon("6", {item =12441, text = "H.T", hotkey = ""}, ds)
+test1 = addIcon("6", {item =12441, text = "H.T.", hotkey = ""}, ds)
 test1:breakAnchors()
-test1:move(60, 220)
+test1:move(210, 310)
 
 
 
@@ -571,16 +568,16 @@ atk = macro(1, "Atk Mob Tela", "", function()
 end)
 test1 = addIcon("2", {item =909, text = "Atk Mob", hotkey = ""}, atk)
 test1:breakAnchors()
-test1:move(160, 120)
+test1:move(210, 410)
 
 md = macro(100, "PowerDown", function()
 if (manapercent() >= 20) then 
 say('PowerDown')
 end
 end)
-test1 = addIcon("9", {item =1718, text = "M.D", hotkey = ""}, md)
+test1 = addIcon("9", {item =1718, text = "Pow Down", hotkey = ""}, md)
 test1:breakAnchors()
-test1:move(110, 120)
+test1:move(210, 360)
 
 --[[Esconder Magias Laranjas da tela]]--
 TH = macro(100, "esconder msg laranja", function() end)
@@ -611,15 +608,13 @@ macro(500, "Auto Haste", nil, function()
     storage.autoHasteText = text
 end)
 
-agg = macro(3000, "AgoniMute", function()
+agg = macro(3000, "Muted", function()
     if g_game.isAttacking() then
-        say("agonimos")
         say("muted")
-        say("titan attack")
     end
 end)
 
-test1 = addIcon("2", {item =13517, text = "Agoni", hotkey = ""}, agg)
+test1 = addIcon("2", {item =13517, text = "Mut", hotkey = ""}, agg)
 test1:breakAnchors()
 test1:move(60, 180)
 
