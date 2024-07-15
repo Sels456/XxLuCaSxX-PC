@@ -80,6 +80,12 @@ macro(1000, "Pitou regen", function()
   end
 end)
 
+macro(1000, "CR-7 regen", function()
+  if hppercent() <= 85 then
+   say('ronaldo Regeneration')
+  end
+end)
+
 -- Establece la pestaña por defecto en "spells"
 setDefaultTab("HP")
 
@@ -188,4 +194,8 @@ end)
 
 macro(10000, "Pitou", function()
   say('pitou power up')
+end)
+
+macro(10000, "CR-7", function()
+  say('ronaldo power up')
 end)
