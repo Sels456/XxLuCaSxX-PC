@@ -328,6 +328,36 @@ macro(800, function()
     rainbowDelay = rainbowDelay + 100 -- Tiempo entre colores
   end
 end, SpellsTab)
+
+
+  icon:move(position.posX or 20, position.posY or 20)
+
+  icon.onDragEnter = function(widget, mousePos)
+    if not g_keyboard.isKeyPressed("F1") then
+      return false
+    end
+    icon:breakAnchors()
+    icon.movingReference = { x = mousePos.x - icon:getX(), y = mousePos.y - icon:getY() }
+    return true
+  end
+
+  icon.onDragMove = function(widget, mousePos, moved)
+    local parentRect = widget:getParent():getRect()
+    local x = math.min(math.max(parentRect.x, mousePos.x - widget.movingReference.x), parentRect.x + parentRect.width - widget:getWidth())
+    local y = math.min(math.max(parentRect.y - widget:getParent():getMarginTop(), mousePos.y - widget.movingReference.y), parentRect.y + parentRect.height - widget:getHeight())
+    widget:move(x, y)
+    icon.moving = { x = icon:getX(), y = icon:getY() }
+    return true
+  end
+
+  icon.onDragLeave = function(widget, pos)
+    storage[nameMacro] = { posX = icon.moving.x, posY = icon.moving.y }
+  end
+end
+
+activeDrag(Pet, 'Pet', storage.Pet or {})
+
+
 --monstros que vão ser ignorados no target
 local monstrosIgnorados = {
 ['CHAMPION'] = true,
