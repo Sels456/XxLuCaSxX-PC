@@ -241,7 +241,7 @@ test1:move(160, 60)
 local defenseHp = 45 --- below this % hp will cast mystic defense (
 local kaiHp = 60 --- above this % hp will cast mystic kai (
 local safeMana = 20
-macro(2000, ".::Super Mystic 45%::.", function()
+macro(1000, ".::Super Mystic 45%::.", function()
     if hppercent() <= defenseHp and not hasManaShield() and manapercent() > safeMana then
         say("mystic defense")
     elseif hasManaShield() and (hppercent() >= kaiHp or manapercent() < safeMana) then
@@ -253,7 +253,7 @@ end)
 local defenseHp = 15 --- below this % hp will cast mystic defense (
 local kaiHp = 20 --- above this % hp will cast mystic kai (
 local safeMana = 20
-macro(2000, ".::Super Mystic 15%::.", function()
+macro(500, ".::Super Mystic 15%::.", function()
     if hppercent() <= defenseHp and not hasManaShield() and manapercent() > safeMana then
         say("mystic defense")
     elseif hasManaShield() and (hppercent() >= kaiHp or manapercent() < safeMana) then
