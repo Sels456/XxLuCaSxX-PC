@@ -265,7 +265,7 @@ macro(500, ".::Super Mystic 15%::.", function()
     end
 end)
 
-ocal reflectSpell = 'reflect' -- spell de reflect
+local reflectSpell = 'reflect' -- spell de reflect
 local reflectCooldown = 2 -- em segundos
 
 -- não altere abaixo.
