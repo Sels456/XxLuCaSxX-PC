@@ -39,7 +39,7 @@ macro(800, function()
   end
 end, SpellsTab)
 
-cpvp = macro(1000, "Combo",  function()
+cpvp = macro(600, "Combo",  function()
 if g_game.isAttacking() then
 say(storage.ComboText)
 say(storage.Combo1Text)
@@ -68,7 +68,7 @@ test1:breakAnchors()
 test1:move(60, 60)
 
 local combo
-macro(1000, "Hibrido", function()
+macro(600, "Hibrido", function()
 if g_game.isAttacking() then
 say('')
 say('Hibrido super lash')
@@ -77,7 +77,7 @@ end
 end)
 
 local combo
-macro(1000, "Fire", function()
+macro(600, "Fire", function()
 if g_game.isAttacking() then
 say('')
 say('fire devion')
@@ -86,7 +86,7 @@ end
 end)
 
 local combo
-macro(1000, "Magnus", function()
+macro(600, "Magnus", function()
 if g_game.isAttacking() then
 say('')
 say('Magnus penetracion')
@@ -95,7 +95,7 @@ end
 end)
 
 local combo
-macro(1000, "Avatar", function()
+macro(600, "Avatar", function()
 if g_game.isAttacking() then
 say('')
 say('terra destruction')
