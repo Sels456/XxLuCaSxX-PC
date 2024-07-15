@@ -95,7 +95,7 @@ end
 end)
 
 local combo
-macro(600, "Avatar", function()
+macro(200, "Avatar", function()
 if g_game.isAttacking() then
 say('')
 say('terra destruction')
@@ -104,7 +104,7 @@ end
 end)
 
 local combo
-cp = macro(600, "All Distancia", function()
+cp = macro(200, "All Distancia", function()
 if g_game.isAttacking() then
 say('agonimos')
 say('Divine Missile')
