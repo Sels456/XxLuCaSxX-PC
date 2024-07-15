@@ -106,7 +106,7 @@ end)
 local combo
 cp = macro(200, "All Distancia", function()
 if g_game.isAttacking() then
-say('agonimos')
+say('')
 say('Divine Missile')
 say('Combo Impact')
 end
