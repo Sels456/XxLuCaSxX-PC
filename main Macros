@@ -40,7 +40,7 @@ macro(800, function()
   end
 end, SpellsTab)
 
-cpvp = macro(200, "Combo",  function()
+cpvp = macro(1000, "Combo",  function()
 if g_game.isAttacking() then
 say(storage.ComboText)
 say(storage.Combo1Text)
@@ -69,7 +69,7 @@ test1:breakAnchors()
 test1:move(60, 60)
 
 local combo
-macro(100, "Hibrido", function()
+macro(1000, "Hibrido", function()
 if g_game.isAttacking() then
 say('')
 say('Hibrido super lash')
@@ -78,7 +78,7 @@ end
 end)
 
 local combo
-macro(100, "Fire", function()
+macro(1000, "Fire", function()
 if g_game.isAttacking() then
 say('')
 say('fire devion')
@@ -87,7 +87,7 @@ end
 end)
 
 local combo
-macro(100, "Magnus", function()
+macro(1000, "Magnus", function()
 if g_game.isAttacking() then
 say('')
 say('Magnus penetracion')
@@ -96,7 +96,7 @@ end
 end)
 
 local combo
-macro(100, "Avatar", function()
+macro(1000, "Avatar", function()
 if g_game.isAttacking() then
 say('')
 say('terra destruction')
@@ -226,7 +226,7 @@ end, SpellsTab)
 local defenseHp = 85 --- below this % hp will cast mystic defense (
 local kaiHp = 90 --- above this % hp will cast mystic kai (
 local safeMana = 20
-mk = macro(100, ".::Super Mystic 85%::.", function()
+mk = macro(2000, ".::Super Mystic 85%::.", function()
     if hppercent() <= defenseHp and not hasManaShield() and manapercent() > safeMana then
         say("mystic defense")
     elseif hasManaShield() and (hppercent() >= kaiHp or manapercent() < safeMana) then
@@ -242,7 +242,7 @@ test1:move(160, 60)
 local defenseHp = 45 --- below this % hp will cast mystic defense (
 local kaiHp = 60 --- above this % hp will cast mystic kai (
 local safeMana = 20
-macro(100, ".::Super Mystic 45%::.", function()
+macro(2000, ".::Super Mystic 45%::.", function()
     if hppercent() <= defenseHp and not hasManaShield() and manapercent() > safeMana then
         say("mystic defense")
     elseif hasManaShield() and (hppercent() >= kaiHp or manapercent() < safeMana) then
@@ -254,7 +254,7 @@ end)
 local defenseHp = 15 --- below this % hp will cast mystic defense (
 local kaiHp = 20 --- above this % hp will cast mystic kai (
 local safeMana = 20
-macro(100, ".::Super Mystic 15%::.", function()
+macro(2000, ".::Super Mystic 15%::.", function()
     if hppercent() <= defenseHp and not hasManaShield() and manapercent() > safeMana then
         say("mystic defense")
     elseif hasManaShield() and (hppercent() >= kaiHp or manapercent() < safeMana) then
@@ -612,7 +612,7 @@ macro(500, "Auto Haste", nil, function()
     storage.autoHasteText = text
 end)
 
-agg = macro(1000, "AgoniMute", function()
+agg = macro(3000, "AgoniMute", function()
     if g_game.isAttacking() then
         say("agonimos")
         say("muted")
