@@ -68,7 +68,7 @@ macro(1000, "Sung Regen", function()
   end
 end)
 
-macro(1000, "Avatar regen", function()
+macro(800, "Avatar regen", function()
   if hppercent() <= 85 then
    say('terra Regeneration')
   end
