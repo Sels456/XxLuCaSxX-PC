@@ -103,6 +103,19 @@ say('terra attack')
 end
 end)
 
+local combo
+cp = macro(600, "All Distancia", function()
+if g_game.isAttacking() then
+say('agonimos')
+say('Divine Missile')
+say('Combo Impact')
+end
+end)
+
+test1 = addIcon("2", {item =13504, text = "PvP", hotkey = ""}, cp)
+test1:breakAnchors()
+test1:move(210, 360)
+
 -- Crea una etiqueta de UI con el texto 
 local name = UI.Label("-- [[PvP]] --")
 
@@ -184,15 +197,6 @@ macro(1000, "Auto Bless", function()
     end
 end)
 
-ib = macro(1000, 'Use blessing', function()
-  if not getFinger() then
-   usewith(13052, player)
-   end
-end)
-
-test1 = addIcon("11", {item =13052, text = "Bless", hotkey = ""}, ib)
-test1:breakAnchors()
-test1:move(110, 220)
 
 macro(1000, "Auto !bol", function()
   if not getFinger() then
@@ -575,9 +579,9 @@ if (manapercent() >= 20) then
 say('PowerDown')
 end
 end)
-test1 = addIcon("9", {item =1718, text = "Pow Down", hotkey = ""}, md)
+test1 = addIcon("9", {item =1718, text = "Treinar", hotkey = ""}, md)
 test1:breakAnchors()
-test1:move(210, 360)
+test1:move(210, 460)
 
 --[[Esconder Magias Laranjas da tela]]--
 TH = macro(100, "esconder msg laranja", function() end)
@@ -614,9 +618,9 @@ agg = macro(3000, "Muted", function()
     end
 end)
 
-test1 = addIcon("2", {item =13517, text = "Mut", hotkey = ""}, agg)
+test1 = addIcon("2", {item =13517, text = "Mute", hotkey = ""}, agg)
 test1:breakAnchors()
-test1:move(60, 180)
+test1:move(210, 560)
 
 local ui = setupUI([[
 Panel
