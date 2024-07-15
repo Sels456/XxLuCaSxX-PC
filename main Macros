@@ -1,4 +1,3 @@
-
 setDefaultTab("main")
 
 -- Crea una etiqueta de UI con el texto 
@@ -51,18 +50,18 @@ say(storage.Combo5Text)
 end
 
 end)
-addTextEdit("ComboText", storage.ComboText or "1", function(widget, text) 
+addTextEdit("ComboText", storage.ComboText or "", function(widget, text) 
 storage.ComboText = text
 end)
-addTextEdit("Combo1Text", storage.Combo1Text or "2", function(widget, text) storage.Combo1Text = text
+addTextEdit("Combo1Text", storage.Combo1Text or "", function(widget, text) storage.Combo1Text = text
 end)
-addTextEdit("Combo2Text", storage.Combo2Text or "3", function(widget, text) storage.Combo2Text = text
+addTextEdit("Combo2Text", storage.Combo2Text or "", function(widget, text) storage.Combo2Text = text
 end)
-addTextEdit("Combo3Text", storage.Combo3Text or "4", function(widget, text) storage.Combo3Text = text
+addTextEdit("Combo3Text", storage.Combo3Text or "", function(widget, text) storage.Combo3Text = text
 end)
-addTextEdit("Combo4Text", storage.Combo4Text or "5", function(widget, text) storage.Combo4Text = text
+addTextEdit("Combo4Text", storage.Combo4Text or "", function(widget, text) storage.Combo4Text = text
 end)
-addTextEdit("Combo5Text", storage.Combo5Text or "6", function(widget, text) storage.Combo5Text = text
+addTextEdit("Combo5Text", storage.Combo5Text or "", function(widget, text) storage.Combo5Text = text
 end)
 test1 = addIcon("2", {item =13351, text = "Combo", hotkey = ""}, cpvp)
 test1:breakAnchors()
