@@ -112,7 +112,7 @@ say('Combo Impact')
 end
 end)
 
-test1 = addIcon("2", {item =13504, text = "PvP", hotkey = ""}, cp)
+test1 = addIcon("2", {item =13624, text = "PvP", hotkey = ""}, cp)
 test1:breakAnchors()
 test1:move(210, 360)
 
