@@ -328,7 +328,6 @@ macro(800, function()
     rainbowDelay = rainbowDelay + 100 -- Tiempo entre colores
   end
 end, SpellsTab)
-
 --monstros que vão ser ignorados no target
 local monstrosIgnorados = {
 ['CHAMPION'] = true,
