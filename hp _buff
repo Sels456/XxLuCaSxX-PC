@@ -32,58 +32,113 @@ macro(1000, "Big Regeneration", function()
   end
 end)
 
-macro(1000, "Hibrido Regen", function()
-  if hppercent() <= 85 then
-   say('Hibrido Regeneration')
-  end
+macro(1, "Hibrido Regen", function()
+    if hppercent() <= 78 and manapercent() > 10 and not hasManaShield() then
+        say("MYSTIC DEFENSE")
+    elseif hasManaShield() and (hppercent() >= 20 or manapercent() < 90) then
+        say("MYSTIC KAI")
+    else
+        if hppercent() <= 90 then
+            say("hibridi regeneration")
+        end
+    end
 end)
 
-macro(1000, "Fire Regen", function()
-  if hppercent() <= 85 then
-   say('Fire Regeneration')
-  end
+macro(1, "Fire Regen", function()
+    if hppercent() <= 78 and manapercent() > 10 and not hasManaShield() then
+        say("MYSTIC DEFENSE")
+    elseif hasManaShield() and (hppercent() >= 20 or manapercent() < 90) then
+        say("MYSTIC KAI")
+    else
+        if hppercent() <= 90 then
+            say("fire regeneration")
+        end
+    end
 end)
 
-macro(1000, "Magnus Regen", function()
-  if hppercent() <= 85 then
-   say('Magnus Regeneration')
-  end
+macro(1, "Magnus Regen", function()
+    if hppercent() <= 78 and manapercent() > 10 and not hasManaShield() then
+        say("MYSTIC DEFENSE")
+    elseif hasManaShield() and (hppercent() >= 20 or manapercent() < 90) then
+        say("MYSTIC KAI")
+    else
+        if hppercent() <= 90 then
+            say("magnus regeneration")
+        end
+    end
 end)
 
-macro(1000, "Mario Regen", function()
-  if hppercent() <= 85 then
-   say('Mario Regeneration')
-  end
+macro(1, "Mario Regen", function()
+    if hppercent() <= 78 and manapercent() > 10 and not hasManaShield() then
+        say("MYSTIC DEFENSE")
+    elseif hasManaShield() and (hppercent() >= 20 or manapercent() < 90) then
+        say("MYSTIC KAI")
+    else
+        if hppercent() <= 90 then
+            say("Mario regeneration")
+        end
+    end
 end)
 
-macro(1000, "Hisoka Regen", function()
-  if hppercent() <= 85 then
-   say('Hisoka Regeneration')
-  end
+macro(1, "Hisokq Regen", function()
+    if hppercent() <= 78 and manapercent() > 10 and not hasManaShield() then
+        say("MYSTIC DEFENSE")
+    elseif hasManaShield() and (hppercent() >= 20 or manapercent() < 90) then
+        say("MYSTIC KAI")
+    else
+        if hppercent() <= 90 then
+            say("hisoka regeneration")
+        end
+    end
 end)
 
-macro(1000, "Sung Regen", function()
-  if hppercent() <= 85 then
-   say('Sung Regeneration')
-  end
+macro(1, "Sung Regen", function()
+    if hppercent() <= 78 and manapercent() > 10 and not hasManaShield() then
+        say("MYSTIC DEFENSE")
+    elseif hasManaShield() and (hppercent() >= 20 or manapercent() < 90) then
+        say("MYSTIC KAI")
+    else
+        if hppercent() <= 90 then
+            say("sung regeneration")
+        end
+    end
 end)
 
-macro(800, "Avatar regen", function()
-  if hppercent() <= 85 then
-   say('terra Regeneration')
-  end
+macro(1, "Ang Regen", function()
+    if hppercent() <= 78 and manapercent() > 10 and not hasManaShield() then
+        say("MYSTIC DEFENSE")
+    elseif hasManaShield() and (hppercent() >= 20 or manapercent() < 90) then
+        say("MYSTIC KAI")
+    else
+        if hppercent() <= 90 then
+            say("terra regeneration")
+        end
+    end
 end)
 
-macro(1000, "Pitou regen", function()
-  if hppercent() <= 85 then
-   say('pitou Regeneration')
-  end
+macro(1, "Pitou Regen", function()
+    if hppercent() <= 78 and manapercent() > 10 and not hasManaShield() then
+        say("MYSTIC DEFENSE")
+    elseif hasManaShield() and (hppercent() >= 20 or manapercent() < 90) then
+        say("MYSTIC KAI")
+    else
+        if hppercent() <= 90 then
+            say("pitou regeneration")
+        end
+    end
 end)
 
-macro(1000, "CR-7 regen", function()
-  if hppercent() <= 85 then
-   say('ronaldo Regeneration')
-  end
+
+macro(1, "CR-7 Regen", function()
+    if hppercent() <= 78 and manapercent() > 10 and not hasManaShield() then
+        say("MYSTIC DEFENSE")
+    elseif hasManaShield() and (hppercent() >= 20 or manapercent() < 90) then
+        say("MYSTIC KAI")
+    else
+        if hppercent() <= 90 then
+            say("ronaldo regeneration")
+        end
+    end
 end)
 
 -- Establece la pestaña por defecto en "spells"
