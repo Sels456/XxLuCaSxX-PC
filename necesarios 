@@ -47,7 +47,6 @@ bmpw = macro(1, 'Bug Map', 'shift+a', function()
 end,scpPanel)
 
 
-
 setDefaultTab("Tools")
 
 
