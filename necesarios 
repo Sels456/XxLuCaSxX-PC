@@ -36,7 +36,7 @@ end)
    
 
 
-Bm = macro(1, 'Bug Map', 'shift+a', function()
+bmpw = macro(1, 'Bug Map', 'shift+a', function()
  if not bugconfig or (bugconfig and bugconfig ~= 'WASD') then
   bugn = 'W'
   bugs = 'S'
@@ -46,7 +46,7 @@ Bm = macro(1, 'Bug Map', 'shift+a', function()
  end
 end,scpPanel)
 
-test1 = addIcon("6", {item =769, text = "Bug Map", hotkey = ""}, Bm)
+test1 = addIcon("6", {item =769, text = "Bug Map", hotkey = ""}, bmpw)
 test1:breakAnchors()
 test1:move(210, 260)
 
