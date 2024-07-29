@@ -46,9 +46,7 @@ bmpw = macro(1, 'Bug Map', 'shift+a', function()
  end
 end,scpPanel)
 
-test1 = addIcon("6", {item =769, text = "Bug Map", hotkey = ""}, bmpw)
-test1:breakAnchors()
-test1:move(210, 260)
+
 
 setDefaultTab("Tools")
 
